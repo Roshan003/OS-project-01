@@ -1,0 +1,11 @@
+import java.lang.Thread;
+import java.util.Scanner;
+class Fibonacci extends Thread
+{
+	private int x;
+	public  int answer;
+
+	public Fibonacci(int x) 
+	{
+		this.x = x;
+	}

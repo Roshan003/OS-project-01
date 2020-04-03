@@ -31,3 +31,21 @@ class Fibonacci extends Thread
 			catch(InterruptedException ex) { }
 		}
 	}
+public static void main(String[] args)
+	{
+		try 
+		{
+			Scanner in = new Scanner(System.in);
+			System.out.print("How many Fibonacci numbers: ");
+			int n = in.nextInt();
+			in.close();
+				for (int i=0;i<n;i++)
+				{
+					Fibonacci f= new Fibonacci(i);
+					Thread threadf= new Thread(f);
+					threadf.start();
+					threadf.join();
+
+					System.out.print(f.answer + " ");
+				}
+			}

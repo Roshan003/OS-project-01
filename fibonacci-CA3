@@ -49,4 +49,9 @@ public static void main(String[] args)
 					System.out.print(f.answer + " ");
 				}
 			}
- 
+ catch(Exception e) 
+		{
+			System.out.println("usage: java Fib NUMBER");
+		}
+	  }
+}
